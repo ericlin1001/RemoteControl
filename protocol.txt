@@ -1,0 +1,21 @@
+#client:
+
+#connect to server.
+#login in
+#mess{messType, content}# endchar = '#', sep = ','
+#messType == 'exit':exit the program.
+#messType == 'mouseDown' / mouseUp / keyDown / keyUp
+#messType == 'refresh' content = None;
+#content = x, y / key
+#a new thread sending mouse,  keyboard.
+#get mouse, keyboard.
+#chr(e.key) pyautogui.keyDown(e.key)
+
+#server
+#messType == 'screen.jpg' content = {length,data}
+#messType == 'exit' exit the program.
+#wait client.
+#main thread: perform key, mouse.
+#thread1: capture screenshot.
+#thread2: send screenshot.
+
