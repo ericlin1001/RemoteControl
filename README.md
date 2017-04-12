@@ -1,22 +1,21 @@
-#RemoteControl
+# RemoteControl
+A remote control software, https://github.com/ericlin1001/RemoteControl
 
-#What's it?
----
-A simple program like remote desktop.
-
-#How does it work?
----
+# How does it work?
 * 1.Share screen, by send real-time screenshot to client.
 * 2.Remote control the server computer, by sending the same mouse or keyboard command to the server computer, i.e. a mouse click in client will be sent to the server side, and the server side will perform the exactly action.
 * 3.Well, it's currently just a semi-finished product. Since only some mouse action and some keys command are supported. To extend it to fully functions as remote desktop, it's not hard, just needs some work.
 
-#TODO::
----
-Server side:
-* To allow more than 1 client to connect.
-* If a client fails, correctly deal with this.
-* Need to implement functions: login, better image compression(Like predictive encoding)
+# What does it support now?
+* Real-time screen capturing in LAN.
+* Mouse and keyboard synchronizing
+* Highlighting mouse click position
 
----
-Client side:
-* Make it portal to any platform....
+# TODO::
+1. Server side:
+* [ ]Allow mutiple client to connect.
+* [ ]Decently deal with failure.
+* [ ]Implement login, better image compression (predictive encoding), etc.
+
+2. Client side:
+* [ ]Make it portable to other platforms, e.g. Windows, Android, etc..
